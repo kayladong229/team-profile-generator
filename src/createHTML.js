@@ -1,10 +1,10 @@
 // Creates manager card
 const createManager = (manager) => {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-3" style="width: 18rem;">
     <div class="card-header bg-primary text-white">
         <h4>${manager.getName()}</h4>
-        <p><i class="fas fa-lightbulb-on fa-lg"></i> ${manager.getRole()}</p>
+        <h5><i class="fas fa-lightbulb-on fa-lg"></i> ${manager.getRole()}</h5>
     </div>
     <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -19,10 +19,10 @@ const createManager = (manager) => {
 // Creates engineer card
 const createEngineer = (engineer) => {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-3" style="width: 18rem;">
     <div class="card-header bg-secondary text-white">
         <h4>${engineer.getName()}</h4>
-        <p><i class="fas fa-briefcase fa-lg"></i> ${engineer.getRole()}</p>
+        <h5><i class="fas fa-briefcase fa-lg"></i> ${engineer.getRole()}</h5>
     </div>
     <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -37,10 +37,10 @@ const createEngineer = (engineer) => {
 // Creates intern card
 const createIntern = (intern) => {
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-3" style="width: 18rem;">
     <div class="card-header bg-warning">
         <h4>${intern.getName()}</h4>
-        <p><i class="fas fa-backpack fa-lg"></i> ${intern.getRole()}</p>
+        <h5><i class="fas fa-backpack fa-lg"></i> ${intern.getRole()}</h5>
     </div>
     <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -105,7 +105,7 @@ const createTeamPage = (cards) => {
             <h1 class="bg-info text-white text-center display-4">Our Team</h1>
         </header>
         <main>
-            <div class="container d-flex justify-content-around">
+            <div class="container p-3 d-flex justify-content-around">
                 <!-- Employee cards go here -->
                 ${cards}
             </div>
