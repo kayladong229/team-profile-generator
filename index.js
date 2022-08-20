@@ -9,7 +9,7 @@ const Manager = require('./lib/manager');
 
 // Array to house team members
 const team = [];
-
+// Manager questions
 const addManager = () => {
     return inquirer
         .prompt([
@@ -42,9 +42,9 @@ const addManager = () => {
             console.log(manager);
         })
 };
-
+// Engineer/intern questions
 const addEmployee = () => {
-    console.log(`\nPlease enter the information of all team employees.\n`)
+    console.log(`\nPlease enter the information of all other team employees.\n`);
     return inquirer
        .prompt([
             {
@@ -71,12 +71,14 @@ const addEmployee = () => {
             {
                 type: 'input',
                 message: "What is this engineer's Github username?",
-                name: 'github'
+                name: 'github',
+                when: input => input.role === 'Engineer',
             },
             {
                 type: 'input',
                 message: "What school is this intern currently attending?",
-                name: 'school'
+                name: 'school',
+                when: input => input.role === 'Intern',
             },
             {
                 type: 'confirm',
@@ -97,17 +99,15 @@ const addEmployee = () => {
                 console.log(employee);
             } 
 
-        team.push(employee);
+            team.push(employee);
 
-        if (addNewEmployee) {
-            return addEmployee(team);
-        } else {
-            return team;
-        }
-    })
+            if (addNewEmployee) {
+                return addEmployee(team);
+            } else {
+                return team;
+            }  
+        })
 };
-
-
 
 // Function to write team html file
 writeToFile = (data) => {
@@ -116,7 +116,7 @@ writeToFile = (data) => {
         // Logs error if there is an error
         ? console.error(err) 
         // Returns success message if page is created
-        : console.log('Thank you for your time. Your new html page has been created successfully.');
+        : console.log('Thank you for your time. Your new HTML page has been created successfully.');
     });
 }
 
