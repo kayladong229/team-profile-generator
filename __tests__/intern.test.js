@@ -17,7 +17,7 @@ describe("Intern", () => {
     });
 
     describe("getName", () => {
-        it("should return the name of the intern", () => {
+        it("should return the intern's name", () => {
             const intern = new Intern("John Smith", 1, "john.smith@domain.com", "UC Berkeley");
             
             expect(intern.getName()).toBe("John Smith");
@@ -25,7 +25,7 @@ describe("Intern", () => {
     });
 
     describe("getId", () => {
-        it("should return the id of the intern", () => {
+        it("should return the intern's ID number", () => {
             const intern = new Intern("John Smith", 1, "john.smith@domain.com", "UC Berkeley");
             
             expect(intern.getId()).toBe(1);
@@ -33,7 +33,7 @@ describe("Intern", () => {
     });
 
     describe("getEmail", () => {
-        it("should return the email address of the intern", () => {
+        it("should return the intern's email address", () => {
             const intern = new Intern("John Smith", 1, "john.smith@domain.com", "UC Berkeley");
             
             expect(intern.getEmail()).toBe("john.smith@domain.com");

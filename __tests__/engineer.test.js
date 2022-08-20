@@ -25,7 +25,7 @@ describe('Engineer', () => {
     });
 
     describe("getId", () => {
-        it("should return the engineer's id", () => {
+        it("should return the engineer's id number", () => {
             const engineer = new Engineer("John Smith", 1, "john.smith@domain.com", "johnsmith123");
             
             expect(engineer.getId()).toBe(1);

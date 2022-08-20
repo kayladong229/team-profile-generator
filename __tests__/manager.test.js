@@ -5,13 +5,13 @@ const Manager = require('../lib/manager')
 describe("Manager", () => {
 
     describe("Manager data creation", () => {
-        it("should create an object with a manager's name, id, email addres and office number", () => {
+        it("should create an object with a manager's name, id, email address and office number", () => {
             const manager = new Manager("John Smith", 1, "john.smith@domain.com", 101);
             
             expect(manager).toBeInstanceOf(Manager);
             expect(manager.name).toBe("John Smith");
             expect(manager.id).toBe(1);
-            expect(manager.email).toBe("johnsmith@domain.com");
+            expect(manager.email).toBe("john.smith@domain.com");
             expect(manager.officeNumber).toBe(101);
         });
     });
@@ -25,7 +25,7 @@ describe("Manager", () => {
     });
 
     describe("getId", () => {
-        it("should return the manager's id", () => {
+        it("should return the manager's ID number", () => {
             const manager = new Manager("John Smith", 1, "john.smith@domain.com", 101);
             
             expect(manager.getId()).toBe(1);
@@ -36,15 +36,7 @@ describe("Manager", () => {
         it("should return the manager's email address", () => {
             const manager = new Manager("John Smith", 1, "john.smith@domain.com", 101);
             
-            expect(manager.getEmail()).toBe("johnsmith@domain.com");
-        });
-    });
-
-    describe("getOfficeNumber", () => {
-        it("should return the manager's office number", () => {
-            const manager = new Manager("John Smith", 1, "john.smith@domain.com", 101);
-            
-            expect(manager.getOfficeNumber()).toBe(101);
+            expect(manager.getEmail()).toBe("john.smith@domain.com");
         });
     });
 
