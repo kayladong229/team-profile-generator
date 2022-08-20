@@ -3,8 +3,8 @@ Completed homework for the Module 10 Challenge. The purpose was to build a comma
 
 A video tutorial has also been created for this project which is linked below.
 
-Terminal screenshot:
-![Terminal Screenshot](./assets/Screen%20Shot%202022-08-20%20at%202.20.22%20PM.png)
+Application screenshot:
+![Application Screenshot](./assets/Screen%20Shot%202022-08-20%20at%202.20.22%20PM.png)
 
 Generated HTML page screenshot:
 ![Sample HTML preview](./assets/Screen%20Shot%202022-08-20%20at%202.19.38%20PM.png)
