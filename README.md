@@ -9,4 +9,4 @@ Terminal screenshot:
 Generated HTML page screenshot:
 ![Sample HTML preview](./assets/Screen%20Shot%202022-08-20%20at%202.19.38%20PM.png)
 
-Tutorial: https://youtu.be/678XOzX8-78
+Tutorial: https://drive.google.com/file/d/1TrGGzd2PQKk1QvwS-cpBVWKmHtZSNWK8/view
