@@ -8,7 +8,7 @@ describe("Intern", () => {
         it("should create an object with an intern's name, id, email and school", () => {
             const intern = new Intern("John Smith", 1, "john.smith@domain.com", "UC Berkeley");
             
-            expect(intern).toBeInstanceOf(Intern);
+            expect(intern instanceof Intern).toBe(true);
             expect(intern.name).toBe("John Smith");
             expect(intern.id).toBe(1);
             expect(intern.email).toBe("john.smith@domain.com");

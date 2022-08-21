@@ -7,7 +7,7 @@ describe("Employee", () => {
         it("should create an object with an employee's name, id, and email address", () => {
             const employee = new Employee("John Smith", 1, "john.smith@domain.com");
 
-            expect(employee).toBeInstanceOf(Employee);
+            expect(employee instanceof Employee).toBe(true);
             expect(employee.name).toEqual("John Smith");
             expect(employee.id).toEqual(1);
             expect(employee.email).toEqual("john.smith@domain.com");
