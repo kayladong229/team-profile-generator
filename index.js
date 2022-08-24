@@ -82,7 +82,7 @@ const addEmployee = () => {
             },
             {
                 type: 'confirm',
-                message: "Would you like to add another member of your team?",
+                message: "Would you like to add another member to your team?",
                 name: 'addNewEmployee',
                 default: false
             }
